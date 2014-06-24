@@ -30,11 +30,6 @@ h1, h2, h3, h4, h5, h6 { color: #444; }
 a { color: #389ccc; text-decoration: none; }
 
 /* 문서 편집 기능 */
-#p-cactions { position: absolute; top: 65px; width: 100%; font-size: 78%; }
-#p-cactions .pBody { position: absolute; right: 15px; }
-#p-cactions .pBody ul { padding: 0; }
-#p-cactions .pBody ul li { float: left; display: inline-block; margin: 0; }
-#p-cactions .pBody ul li a { padding: 2px 2px; border: 1px solid #aaa; border-bottom: 0; margin: 0 0 0 4px; background: #fff; text-decoration: none; }
 #p-cactions h5 { display: none; }
 
 /* 서치 박스 */
@@ -71,14 +66,35 @@ div#footer ul { padding: 0; margin: 0; list-style: none; list-style-image: none;
 /* 반응형 CSS */
 /* 해상도 960px 이상의 기기 */
 @media all and (min-width: 960px) {
-	#column-content { margin-top: 116px; }
+	#column-content { margin-top: 132px; }
 	#p-logo { height: 88px;	}
 	#p-logo a, #p-logo a:hover { display: block; height: 88px; width: 176px; background-repeat: no-repeat; background-position: 50% 60% !important; text-decoration: none; }
 	#p-cactions { top: 89px; }
 
 	/* 본문 목차 */
-	#toc { position: fixed; top: 124px; right: 33px; }
+	#toc { position: fixed; top: 140px; right: 33px; }
 	.tochidden { right: 32px!important; min-width: 280px; }
+
+	/* 문서 편집 기능 */
+	#p-cactions { position: absolute; top: 82px; width: 100%; font-size: 78%; }
+	#p-cactions .pBody { position: absolute; right: 15px; }
+	#p-cactions .pBody ul { padding: 0; }
+	#p-cactions .pBody ul li { float: left; display: inline-block; margin: 0 4px; }
+	#p-cactions .pBody ul li a { display: block; padding: 2px; margin: 0; border: 1px solid #aaa; border-radius: 4px; width: 32px; height: 32px; background: #eee; background-image: url(dortmund.png); background-position: 143px 531px; text-indent: -999999px; opacity: 0.4; }
+	#p-cactions .pBody ul li a:hover { opacity: 0.9; }
+	#p-cactions .pBody ul li.selected a { opacity: 1.0; }
+	#p-cactions .pBody ul li#ca-nstab-main a { background-position: 467px 221px; }
+	#p-cactions .pBody ul li#ca-nstab-mediawiki a { background-position: 467px 221px; }
+	#p-cactions .pBody ul li#ca-nstab-special a { background-position: 467px 535px; }
+	#p-cactions .pBody ul li#ca-talk a { background-position: 774px 535px; }
+	#p-cactions .pBody ul li#ca-addsection a { background-position: 223px 483px; }
+	#p-cactions .pBody ul li#ca-edit a { background-position: 387px 323px; }
+	#p-cactions .pBody ul li#ca-history a { background-position: 698px 64px; }
+	#p-cactions .pBody ul li#ca-delete a { background-position: 626px 220px; }
+	#p-cactions .pBody ul li#ca-move a { background-position: 699px 535px; }
+	#p-cactions .pBody ul li#ca-protect a { background-position: 71px 531px; }
+	#p-cactions .pBody ul li#ca-watch a { background-position: 774px 272px; }
+	#p-cactions .pBody ul li#ca-unwatch a { background-position: 549px 67px; }
 
 	/* 본문 들여쓰기 보정 */
 	#bodyContent > h3 { text-indent: 20px; }
@@ -96,7 +112,7 @@ div#footer ul { padding: 0; margin: 0; list-style: none; list-style-image: none;
 	#p-personal .pBody ul li a { padding: 2px 0 2px 4px; border-left: 1px solid #aaa; margin: 0 0 0 4px; text-decoration: none; }
 	
 	/* 서치 박스 */
-	#p-search { position: absolute; top: 92px; width: 360px; }
+	#p-search { position: absolute; top: 92px; width: 360px; font-size: 105%;}
 
 	/* 도구 모음 */
 	#p-tb { float: left; font-size: 80%; }
@@ -111,6 +127,8 @@ div#footer ul { padding: 0; margin: 0; list-style: none; list-style-image: none;
 
 /* 해상도 960px 미만의 기기 */
 @media all and (max-width: 959px){
+	#column-content { margin-top: 104px; }
+
 	/* 본문 목차 */
 	#toc { margin: auto; }
 
@@ -124,6 +142,27 @@ div#footer ul { padding: 0; margin: 0; list-style: none; list-style-image: none;
 	#p-personal { float: left; width: 48%; margin-left: 8px; }
 	#p-personal ul { padding: 0; margin: 0; list-style: none; }
 	#p-personal ul li, #p-tb ul li { font-size: 90% }
+
+
+	/* 문서 편집 기능 */
+	#p-cactions { position: absolute; top: 54px; width: 100%; font-size: 78%; }
+	#p-cactions .pBody { position: absolute; right: 2px; }
+	#p-cactions .pBody ul { padding: 0; }
+	#p-cactions .pBody ul li { float: left; display: inline-block; margin: 0 0 0 2px; }
+	#p-cactions .pBody ul li a { display: block; padding: 2px; margin: 0; border: 1px solid #aaa; border-radius: 4px; width: 32px; height: 32px; background: #eee; background-image: url(dortmund.png); text-indent: -999999px; opacity: 0.6; }
+	#p-cactions .pBody ul li.selected a { opacity: 1.0; }
+	#p-cactions .pBody ul li#ca-nstab-main a { background-position: 467px 221px; }
+	#p-cactions .pBody ul li#ca-nstab-mediawiki a { background-position: 467px 221px; }
+	#p-cactions .pBody ul li#ca-nstab-special a { background-position: 467px 535px; }
+	#p-cactions .pBody ul li#ca-talk a { background-position: 774px 535px; }
+	#p-cactions .pBody ul li#ca-addsection a { background-position: 223px 483px; }
+	#p-cactions .pBody ul li#ca-edit a { background-position: 387px 323px; }
+	#p-cactions .pBody ul li#ca-history a { background-position: 698px 64px; }
+	#p-cactions .pBody ul li#ca-delete a { background-position: 626px 220px; }
+	#p-cactions .pBody ul li#ca-move a { background-position: 699px 535px; }
+	#p-cactions .pBody ul li#ca-protect a { display: none; }
+	#p-cactions .pBody ul li#ca-watch a { display: none; }
+	#p-cactions .pBody ul li#ca-unwatch a { display: none; }
 
 	/* 도구 모음 */
 	#p-tb { float: right; width: 48%; }
@@ -143,6 +182,9 @@ div#footer ul { padding: 0; margin: 0; list-style: none; list-style-image: none;
 
 	/* 이미지 크기 제한 */
 	img { max-width: 98%!important; height: auto; }
+
+	/* 각종 시스템 페이지 부분 크기 조정 */
+	fieldset .mw-input { width: 60px !important; overflow: hidden;}
 }
 
 
