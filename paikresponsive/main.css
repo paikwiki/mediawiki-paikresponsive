@@ -154,6 +154,7 @@ div#footer ul { padding: 0; margin: 0; list-style: none; list-style-image: none;
 	#p-cactions .pBody ul li#ca-nstab-main a { background-position: 467px 221px; }
 	#p-cactions .pBody ul li#ca-nstab-mediawiki a { background-position: 467px 221px; }
 	#p-cactions .pBody ul li#ca-nstab-special a { background-position: 467px 535px; }
+	#p-cactions .pBody ul li#ca-nstab-category a { background-position: 467px 221px; }
 	#p-cactions .pBody ul li#ca-talk a { background-position: 774px 535px; }
 	#p-cactions .pBody ul li#ca-addsection a { background-position: 223px 483px; }
 	#p-cactions .pBody ul li#ca-edit a { background-position: 387px 323px; }
@@ -177,14 +178,47 @@ div#footer ul { padding: 0; margin: 0; list-style: none; list-style-image: none;
 	/* 글쓰기 창 */
 	#wpTextbox1 { width: 94%; font-size: 90%; }
 
+	/* 글쓰기 창 아래 안내 멘트 */
+	#editpage-copywarn p { font-size: 80%; }
+	.mw-summary { font-size: 80%; }
 	/* 글쓰기 창의 편집 요약 부분 길이 조정 */
 	#wpSummary { width: 200px!important; }
+	.editHelp, .editCheckboxes { display: block; margin-top: 12px; font-size: 80%; }
 
+	/* 편집툴 부분 */
+	.mw-editTools { font-size: 80%; }
 	/* 이미지 크기 제한 */
 	img { max-width: 98%!important; height: auto; }
 
-	/* 각종 시스템 페이지 부분 크기 조정 */
-	fieldset .mw-input { width: 60px !important; overflow: hidden;}
+	/* == 각종 시스템 페이지 == */ 
+	/* 문서 역사 */
+	#pagehistory { padding: 2px; font-size: 70%; list-style: none; }
+	/* 부분 크기 조정 */
+	#wpReason { width: 200px; height: 180px; word-break: break-word; }
+	#wpNewTitle { width: 200px; }
+	/* 테이블 크기 조정 */
+	#mw-deleteconfirm-table, #mw-movepage-table { font-size: 80%; }
+
+	/* 테이블 형태로 나오는 목록 */
+	.mw-specialpages-table ul { padding: 2px; font-size: 90%; list-style: none; }
+	.mw-specialpages-table td { display: block; width: 100%}
+	
+	/* 분류 목록 */
+	#mw-pages h3 { margin: 0; }
+	#mw-pages ul { padding: 2px; margin: 0; font-size: 90%; list-style: none; }
+	#mw-pages td { display: block; width: 100%}	
+
+	/* 버튼 모양 변경 */
+	input[type=submit] {
+		border-radius: 6px;
+		background: #fff;
+		border: 1px solid #999;
+		padding: 2px 12px;
+		font-size: 80%;
+		box-shadow: 2px 2px 2px #888888;;
+	}
+
+	
 }
 
 
